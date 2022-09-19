@@ -1,4 +1,5 @@
 const navbar = document.querySelector('nav');
+const cursor = document.querySelector('.cursor');
 
 let position = 0;
 
@@ -11,4 +12,9 @@ window.addEventListener('scroll', () => {
     }
 
     position = window.scrollY;
+})
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
 })
