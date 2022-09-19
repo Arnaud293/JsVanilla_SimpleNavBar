@@ -18,3 +18,11 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.pageX + 'px';
     cursor.style.top = e.pageY + 'px';
 })
+
+document.addEventListener('mousedown', () => {
+    cursor.style.transform= 'scale(2)';
+})
+
+document.addEventListener('mouseup', () => {
+    cursor.style.transform= 'scale(1)';
+})
